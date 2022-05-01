@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen AGM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./aplicacion.css">
+</head>
+<body>
+    <header>
+        <div>
+            <figure>
+                <img src="./imagenes/Bitmap.png" alt="logo">
+            </figure>
+            <h1 class="nombre_sitio_web">AGUITO</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./acerca.html">Acerca De</a>
+                </li>
+                <li>
+                    <a href="" class="btn_morado">Aplicación</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Calcular Salario</h1>
+        <h2>Ingrese su salario mensual</h2>
+        <input type="number" id="salario"/>
+        <button onclick="calcular()">Calcular</button>
+        <p>Salario bruto mensual</p>
+        <input type="number" id="sbm">
+        <p>Deducción INSS</p>
+        <input type="number" id="di">
+        <p>Salario neto (luego de deducciones)</p>
+        <input type="number" id="snld">
+        <p>Deducción Impuesto sobre la Renta (IR)</p>
+        <input type="number" id="disr">
+        <p>Salario total con deducciones</p>
+        <input type="number" id="std">
+    </main>
+    <footer>
+        <div>
+            <figure>
+                <img src="./imagenes/Bitmap.png" alt="logo">
+            </figure>
+            <h1 class="nombre_sitio_web">AGUITO</h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet</p>
+    </footer>
+    <script src="./aplicacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.nombre_sitio_web {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 900;
+    color: #6E29A9;
+    text-decoration: overline;
+}
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px #999;
+}
+header div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+header nav {
+    width: 100%;
+    margin-top: 5px 0;
+}
+header nav ul {
+    display: flex;
+    justify-content: stretch;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+header nav li {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+header nav a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #01A1E9;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+header nav a:hover {
+    background-color: #989898;
+    color: white;
+}
+header nav .btn_morado {
+    color: #6E29A9;
+    background-color: #F5F5F5;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+
+}
+main h1 {
+    color: #8200FF;
+    font-weight: 900;
+    font-size: 3.4rem;
+}
+main h2 {
+    color: #1B314F;
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin-top: 70px;
+    text-align: center;
+
+}
+main button {
+    background-color: #6E29A9;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px 100px;
+    margin-top: 25px;
+}
+main button:hover {
+    background-color: #49107a;
+}
+main input {
+    width: 90%;
+    height: 54px;
+    background-color: #595959;
+    border: 1px solid #000000;
+    border-radius: 9px;
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-top: 15px;
+    text-align: center;
+}
+#salario {
+    color: black;
+    background-color: #F5F5F5;
+}
+main p {
+    color: #1B314F;
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-top: 30px;
+    text-align: center;
+}
+footer {
+    background-color: #1B314F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 20px;
+}
+footer div {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+footer div h1 {
+    visibility: hidden;
+    position: absolute;
+}
+footer p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    text-align: right;
+}
+@media (min-width: 450px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 25px;
+    }
+    header nav {
+        width: auto;
+        margin: 0;
+    }
+    header nav ul {
+        
+        justify-content: space-around;
+        
+    }
+    header nav li {
+        width: auto
+    }
+    header nav a {
+        width: auto;
+        margin-left: 30px;
+        padding: 3px 25px;
+        border-radius: 6px;
+    }
+    main input {
+        width: 460px;
+    }
+    main h1 {
+        font-size: 6.4rem;
+    }
+    main h2 {
+        font-size: 3.2rem;
+    
+    }
+    main p {
+        font-size: 3.2rem;
+    }
+    footer {
+        padding: 5vh 150px;
+        
+    }
+    footer div {
+        margin-right: 0;
+    }
+    footer div h1 {
+        visibility: visible;
+        position: static;
+    }
+}

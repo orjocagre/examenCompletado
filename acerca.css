@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.nombre_sitio_web {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 900;
+    color: #6E29A9;
+    text-decoration: overline;
+}
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px #999;
+}
+header div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+header nav {
+    width: 100%;
+    margin-top: 5px 0;
+}
+header nav ul {
+    display: flex;
+    justify-content: stretch;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+header nav li {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+header nav a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #01A1E9;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+header nav a:hover {
+    background-color: #989898;
+    color: white;
+}
+header nav .btn_morado {
+    color: #6E29A9;
+    background-color: #F5F5F5;
+}
+main {
+    padding: 0 20px;
+}
+main h1 {
+    color: #8200FF;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 50px 0;
+}
+main h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+main h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #523E97;
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+main p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.344rem;
+}
+main div {
+    display: flex;
+    flex-direction: column;
+}
+main div img {
+    width: 100%;
+}
+main ul {
+    padding-left: 30px;
+    margin-bottom: 60px;
+}
+footer {
+    background-color: #1B314F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 20px;
+}
+footer div {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+footer div h1 {
+    visibility: hidden;
+    position: absolute;
+}
+footer p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    text-align: right;
+}
+@media (min-width: 450px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 25px;
+    }
+    header nav {
+        width: auto;
+        margin: 0;
+    }
+    header nav ul {
+        
+        justify-content: space-around;
+        
+    }
+    header nav li {
+        width: auto
+    }
+    header nav a {
+        width: auto;
+        margin-left: 30px;
+        padding: 3px 25px;
+        border-radius: 6px;
+    }
+    main {
+        padding: 0 50px;
+    }
+    main h1 {
+        font-size: 6.4rem;
+    }
+    main h2 {
+        font-size: 4.8rem;
+    }
+    main h3 {
+        font-size: 3.6rem;
+    }
+    main div {
+        flex-direction: row;
+    }
+    main div p {
+        width: 80%;
+    }
+    main div figure {
+        margin-left: 25px;
+    }
+    footer {
+        padding: 5vh 150px;
+        
+    }
+    footer div {
+        margin-right: 0;
+    }
+    footer div h1 {
+        visibility: visible;
+        position: static;
+    }
+}
